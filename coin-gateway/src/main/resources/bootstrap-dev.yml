@@ -78,7 +78,7 @@ security:
     - /coin-admin/**
     - /coin-user/**
     - /coin-market/**
-    - /coin-exchange/**
+    - /coin-trade/**
     - /coin-wallet/**
     - /coin-chat/**
 
