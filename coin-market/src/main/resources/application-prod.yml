@@ -3,8 +3,8 @@ spring:
     nacos:
       # 注册中心
       discovery:
-        server-addr: http://194.41.36.123:8848
-        namespace: coin-dev
+        server-addr: http://127.0.0.1:8848
+        namespace: coin-prod
   session:
     timeout: 60
     store-type: redis
@@ -12,7 +12,7 @@ spring:
   datasource:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     password: 65Yxd4PMYbTNAYHT
-    url: jdbc:p6spy:mysql://194.41.36.123:3306/zhengtuo?characterEncoding=utf-8&useSSL=false
+    url: jdbc:p6spy:mysql://127.0.0.1:3306/zhengtuo?characterEncoding=utf-8&useSSL=false
     username: zhengtuo
 
   jpa:
@@ -21,19 +21,19 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://194.41.36.123:27017/bitrade
+      uri: mongodb://127.0.0.1:27017/bitrade
 
   ## redis\u670D\u52A1\u5668\u914D\u7F6E
   redis:
     database: 0
-    host: 194.41.36.123
+    host: 127.0.0.1
     password: Wrhwiydk6Z2
     port: 6379
     timeout: 30000
 
   #kafka
   kafka:
-    bootstrap-servers: 194.41.36.123:9092
+    bootstrap-servers: 127.0.0.1:9092
     producer:
       batch:
         size: 256 # \u6BCF\u6B21\u6279\u5904\u7406\u7684\u5927\u5C0F

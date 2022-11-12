@@ -23,7 +23,7 @@ spring:
     nacos:
       # 注册中心
       discovery:
-        server-addr: http://127.0.0.1:8848
+        server-addr: http://194.41.36.123:8848
         namespace: coin-dev
 
     gateway:
