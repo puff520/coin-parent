@@ -75,6 +75,10 @@
 			<artifactId>coin-core</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>cn.ztuo.coin</groupId>
+			<artifactId>trade-core</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>io.reactivex</groupId>
 			<artifactId>rxjava</artifactId>
 		</dependency>

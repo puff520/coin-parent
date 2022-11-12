@@ -20,6 +20,12 @@ spring:
       # 连接池中的最小空闲连接
       minidle: 1
   cloud:
+    nacos:
+      # 注册中心
+      discovery:
+        server-addr: http://127.0.0.1:8848
+        namespace: coin-dev
+
     gateway:
       discovery:
         locator:
