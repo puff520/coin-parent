@@ -71,9 +71,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>cn.ztuo.bitrade</groupId>
-            <artifactId>exchange-core</artifactId>
-            <version>1.0</version>
+            <groupId>cn.ztuo.coin</groupId>
+            <artifactId>coin-core</artifactId>
         </dependency>
         <dependency>
             <groupId>com.aqmd</groupId>
