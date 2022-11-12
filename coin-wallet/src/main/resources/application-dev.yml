@@ -6,7 +6,8 @@ spring:
         server-addr: http://194.41.36.123:8848
         namespace: coin-dev
   session:
-    store-type: none
+    timeout: 60
+    store-type: redis
   datasource:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     password: 65Yxd4PMYbTNAYHT
@@ -27,7 +28,7 @@ spring:
     timeout: 30000
   #kafka
   kafka:
-    bootstrap-servers: 194.41.36.123:9092
+    bootstrap-servers: 127.0.0.1:9092
     producer:
       batch:
         size: 256 # 每次批处理的大小
