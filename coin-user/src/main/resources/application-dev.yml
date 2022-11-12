@@ -1,9 +1,10 @@
-server:
-  port: 6005
-
 spring:
-  application:
-    name: coin-trade
+  cloud:
+    nacos:
+      # 注册中心
+      discovery:
+        server-addr: http://127.0.0.1:8848
+        namespace: coin-dev
   session:
     timeout: 60
     store-type: redis
@@ -62,3 +63,7 @@ decorator:
       log-file: spy.log
       log-format: executionTime:%(executionTime) | sql:%(sqlSingleLine)
       logging: file
+
+
+
+

@@ -1,0 +1,9 @@
+server:
+  port: 6005
+spring:
+  application:
+    name: coin-trade
+  main:
+    allow-bean-definition -overriding: true
+  profiles:
+    active: dev

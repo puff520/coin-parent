@@ -1,0 +1,9 @@
+server:
+  port: 6006
+spring:
+  application:
+    name: coin-wallet
+  main:
+    allow-bean-definition -overriding: true
+  profiles:
+    active: dev

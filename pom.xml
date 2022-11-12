@@ -65,6 +65,7 @@
 		<logback-ext-spring_version>0.1.4</logback-ext-spring_version>
 		<!-- Test Libs -->
 		<junit_version>4.12</junit_version>
+		<nacos.client.version>2.1.2</nacos.client.version>
 	</properties>
 
 	<dependencies>

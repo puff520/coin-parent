@@ -1,0 +1,9 @@
+server:
+  port: 6010
+spring:
+  application:
+    name: coin-admin
+  main:
+    allow-bean-definition -overriding: true
+  profiles:
+    active: dev

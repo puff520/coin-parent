@@ -1,0 +1,9 @@
+server:
+  port: 6008
+spring:
+  application:
+    name: coin-chat
+  main:
+    allow-bean-definition -overriding: true
+  profiles:
+    active: dev

@@ -1,0 +1,9 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: coin-user
+  main:
+    allow-bean-definition -overriding: true
+  profiles:
+    active: dev
