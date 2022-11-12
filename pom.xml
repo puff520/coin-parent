@@ -15,6 +15,7 @@
 	<modules>
 		<module>coin-gateway</module>
 		<module>coin-core</module>
+		<module>huobi-client</module>
 		<module>trade-core</module>
 		<module>aqmd-push</module>
 		<module>coin-admin</module>
