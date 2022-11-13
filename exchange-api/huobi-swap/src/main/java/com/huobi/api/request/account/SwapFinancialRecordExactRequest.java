@@ -1,15 +1,13 @@
 package com.huobi.api.request.account;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
-@AllArgsConstructor
 @Builder
+@AllArgsConstructor
 @Data
 public class SwapFinancialRecordExactRequest {
-    private String marginAccount;
     private String contractCode;
     private String type;
     private Long startTime;

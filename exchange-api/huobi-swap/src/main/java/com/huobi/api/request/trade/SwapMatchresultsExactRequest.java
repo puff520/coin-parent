@@ -6,8 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 
 @AllArgsConstructor
-@Builder
 @Data
+@Builder
 public class SwapMatchresultsExactRequest {
     private String contractCode;
     private Integer tradeType;
@@ -16,5 +16,4 @@ public class SwapMatchresultsExactRequest {
     private Long fromId;
     private Integer size;
     private String direct;
-    private String pair;
 }

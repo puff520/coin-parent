@@ -8,8 +8,8 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Builder
 @AllArgsConstructor
+@Builder
 @Data
 public class BatchMergedResponse {
     private String status;
@@ -32,13 +32,6 @@ public class BatchMergedResponse {
         private String high;
         private String low;
         private String vol;
-        @SerializedName("trade_turnover")
-        private String tradeTurnover;
         private Long ts;
-        @SerializedName("trade_partition")
-        private String tradePartition;
-        @SerializedName("business_type")
-        private String businessType;
     }
-
 }

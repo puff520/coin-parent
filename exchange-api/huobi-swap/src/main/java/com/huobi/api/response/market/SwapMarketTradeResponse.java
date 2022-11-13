@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -51,12 +52,8 @@ public class SwapMarketTradeResponse {
             private String price;
             private Long ts;
             private String quantity;
-            @SerializedName("trade_turnover")
-            private String tradeTurnover;
-            @SerializedName("contract_code")
+            @SerializedName("contractCode")
             private String contractCode;
-            @SerializedName("trade_partition")
-            private String tradePartition;
         }
     }
 }

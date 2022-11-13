@@ -64,9 +64,7 @@ public class SwapHisordersResponse {
              * "order_id_str":"759079311113506816",
              * "fee_asset":"USDT",
              * "liquidation_type":"0",
-             * "margin_asset":"USDT",
-             * "margin_mode":"isolated",
-             * "margin_account":"ETH-USDT"
+             * "margin_asset":"USDT"
              */
             @SerializedName("order_id")
             private Long orderId;
@@ -106,20 +104,13 @@ public class SwapHisordersResponse {
             private Integer orderType;
             @SerializedName("liquidation_type")
             private String liquidationType;
-            @SerializedName("margin_mode")
-            private String marginMode;
-            @SerializedName("margin_account")
-            private String marginAccount;
             @SerializedName("is_tpsl")
-            private Integer isTpsl;
+            private String isTpsl;
             @SerializedName("update_time")
             private Long updateTime;
             @SerializedName("real_profit")
-            private BigDecimal realProfit;
-            @SerializedName("trade_partition")
-            private String tradePartition;
-            @SerializedName("reduce_only")
-            private String reduceOnly;
+            private String realProfit;
+
         }
     }
 }

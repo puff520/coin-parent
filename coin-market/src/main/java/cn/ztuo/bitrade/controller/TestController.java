@@ -30,107 +30,6 @@ public class TestController {
     MarketClient marketClient = MarketClient.create(new HuobiOptions());
 
 
-    /**
-     * 获取币种历史K线
-     *
-     * @param symbol
-     * @return
-     */
-
-    @RequestMapping("historyKline")
-    public List<Candlestick> historyKline(String symbol, int size, CandlestickIntervalEnum intervalEnum) {
-        List<Candlestick> list = marketClient
-                .getCandlestick(CandlestickRequest.builder()
-                        .symbol(symbol)
-                        .interval(intervalEnum)
-                        .size(size)
-                        .build());
-        return list;
-    }
-
-    /**
-     * 获取最近成交记录
-     *
-     * @param symbol
-     * @return
-     */
-    @RequestMapping("marketTrade")
-    public List<MarketTrade> marketTrade(String symbol) {
-        List<MarketTrade> marketTradeList = marketClient
-                .getMarketTrade(MarketTradeRequest
-                        .builder()
-                        .symbol(symbol)
-                        .build());
-        return marketTradeList;
-    }
-
-    /**
-     * 聚合行情
-     */
-    @RequestMapping("/detailMerged")
-    public MarketDetailMerged detailMerged(String symbol) {
-        MarketDetailMerged marketDetailMerged = marketClient
-                .getMarketDetailMerged(MarketDetailMergedRequest
-                        .builder()
-                        .symbol(symbol)
-                        .build());
-        return marketDetailMerged;
-    }
-
-    /**
-     * 所有交易对的最新
-     */
-    @RequestMapping("/marketTickers")
-    public List<MarketTicker> marketTickers() {
-        List<MarketTicker> tickerList = marketClient.getTickers();
-        return tickerList;
-    }
-
-
-    /**
-     * 市场深度数据
-     */
-    @RequestMapping("/marketDepth")
-    public MarketDepth marketDepth(String symbol, DepthSizeEnum sizeEnum, DepthStepEnum stepEnum) {
-        MarketDepth marketDepth = marketClient
-                .getMarketDepth(MarketDepthRequest.builder()
-                        .symbol(symbol)
-                        .depth(sizeEnum)
-                        .step(stepEnum)
-                        .build());
-        return marketDepth;
-    }
-
-    /**
-     * 获得近期交易记录
-     *
-     * @param symbol
-     * @return
-     */
-    @RequestMapping("historyTrade")
-    public List<MarketTrade> historyTrade(String symbol) {
-        List<MarketTrade> marketHistoryTradeList = marketClient
-                .getMarketHistoryTrade(MarketHistoryTradeRequest
-                        .builder()
-                        .symbol(symbol)
-                        .build());
-        return marketHistoryTradeList;
-    }
-
-    /**
-     * 最近24小时行情数据
-     */
-    @RequestMapping("marketDetail")
-    public MarketDetail marketDetail(String symbol) {
-        MarketDetail marketDetail = marketClient
-                .getMarketDetail(MarketDetailRequest
-                        .builder()
-                        .symbol(symbol)
-                        .build());
-        return marketDetail;
-    }
-
-
     @RequestMapping("subDetail")
     public void subDetail(String symbol) {
         marketClient.subMarketDetail(SubMarketDetailRequest
@@ -154,9 +53,6 @@ public class TestController {
         marketClient.subMbpIncrementalUpdate(SubMbpIncrementalUpdateRequest
                 .builder().symbol(symbol).build(), event -> System.out.println(event.toString()));
     }
-
-
-
 
 
     @RequestMapping("bnHistoryKline")

@@ -46,8 +46,6 @@ public class SwapMarketHistoryKlineResponse {
         private BigDecimal low;
         private BigDecimal open;
         private BigDecimal vol;
-        @SerializedName("trade_turnover")
-        private BigDecimal tradeTurnover;
 
     }
 }

@@ -26,12 +26,5 @@ public class SwapEstimatedSettlementPriceResponse {
         private BigDecimal estimatedSettlementPrice;
         @SerializedName("settlement_type")
         private String settlementType;
-        private String pair;
-        @SerializedName("business_type")
-        private String businessType;
-        @SerializedName("contract_type")
-        private String contractType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
     }
 }

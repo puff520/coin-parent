@@ -50,13 +50,6 @@ public class SwapSubPositionInfoResponse {
         private String direction;
         @SerializedName("last_price")
         private BigDecimal lastPrice;
-        @SerializedName("margin_mode")
-        private String marginMode;
-        @SerializedName("margin_account")
-        private String marginAccount;
-        @SerializedName("trade_partition")
-        private String tradePartition;
-        @SerializedName("position_mode")
-        private String positionMode;
+
     }
 }

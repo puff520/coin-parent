@@ -17,6 +17,4 @@ public class SwapTpslOrderRequest {
     private BigDecimal slTriggerPrice;
     private BigDecimal slOrderPrice;
     private String slOrderPriceType;
-    private String pair;
-    private String contractType;
 }

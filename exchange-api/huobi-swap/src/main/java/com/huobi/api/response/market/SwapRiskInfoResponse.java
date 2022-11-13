@@ -33,12 +33,5 @@ public class SwapRiskInfoResponse {
         private BigDecimal insuranceFund;
         @SerializedName("estimated_clawback")
         private BigDecimal estimatedClawback;
-        private String pair;
-        @SerializedName("business_type")
-        private String businessType;
-        @SerializedName("contract_type")
-        private String contractType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
     }
 }

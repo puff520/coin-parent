@@ -12,6 +12,4 @@ public class SwapTrackOpenordersRequest {
     private Integer tradeType;
     private Integer pageIndex;
     private Integer pageSize;
-    private String pair;
-    private String tradePartition;
 }

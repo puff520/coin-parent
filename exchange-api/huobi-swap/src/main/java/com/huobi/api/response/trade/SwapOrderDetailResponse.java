@@ -79,19 +79,11 @@ public class SwapOrderDetailResponse {
         private Integer currentPage;
         @SerializedName("total_size")
         private Integer totalSize;
-        @SerializedName("margin_mode")
-        private String marginMode;
-        @SerializedName("margin_account")
-        private String marginAccount;
         @SerializedName("is_tpsl")
-        private Integer isTpsl;
+        private String isTpsl;
         @SerializedName("real_profit")
-        private BigDecimal realProfit;
-        @SerializedName("trade_partition")
-        private String tradePartition;
+        private String realProfit;
         private List<TradesBean> trades;
-        @SerializedName("reduce_only")
-        private String reduceOnly;
 
         @Data
         @AllArgsConstructor
@@ -117,8 +109,9 @@ public class SwapOrderDetailResponse {
             @SerializedName("fee_asset")
             private String feeAsset;
             @SerializedName("real_profit")
-            private BigDecimal realProfit;
+            private String realProfit;
             private BigDecimal profit;
+
         }
     }
 }

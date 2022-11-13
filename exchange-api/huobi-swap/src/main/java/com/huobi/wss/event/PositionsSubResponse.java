@@ -46,10 +46,6 @@ public class PositionsSubResponse {
         private BigDecimal lastPrice;
         @SerializedName("margin_asset")
         private String marginAsset;
-        @SerializedName("margin_mode")
-        private String marginMode;
-        @SerializedName("margin_account")
-        private String marginAccount;
 
 
     }

@@ -66,9 +66,7 @@ public class SwapOpenordersResponse {
              * "fee_asset":"USDT",
              * "liquidation_type":null,
              * "canceled_at":null,
-             * "margin_asset":"USDT",
-             * "margin_mode":"isolated",
-             * "margin_account":"BTC-USDT"
+             * "margin_asset":"USDT"
              */
 
             private String symbol;
@@ -113,20 +111,12 @@ public class SwapOpenordersResponse {
             private String liquidationType;
             @SerializedName("canceled_at")
             private String canceledAt;
-            @SerializedName("margin_mode")
-            private String marginMode;
-            @SerializedName("margin_account")
-            private String marginAccount;
             @SerializedName("is_tpsl")
-            private Integer isTpsl;
+            private String isTpsl;
+            @SerializedName("real_profit")
+            private String realProfit;
             @SerializedName("update_time")
             private Long updateTime;
-            @SerializedName("real_profit")
-            private BigDecimal realProfit;
-            @SerializedName("trade_partition")
-            private String tradePartition;
-            @SerializedName("reduce_only")
-            private String reduceOnly;
         }
     }
 }

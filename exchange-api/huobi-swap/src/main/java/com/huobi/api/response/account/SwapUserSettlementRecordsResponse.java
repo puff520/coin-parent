@@ -6,41 +6,38 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.net.BindException;
 import java.util.List;
 
-@Builder
-@Data
 @AllArgsConstructor
+@Data
+@Builder
 public class SwapUserSettlementRecordsResponse {
     private String status;
     private Long ts;
     private List<DataBean> data;
 
-    @Builder
-    @Data
     @AllArgsConstructor
+    @Data
+    @Builder
     public static class DataBean{
-        @SerializedName("total_page")
-        private Integer totalPage;
         @SerializedName("total_size")
-        private Integer totalSize;
+        private Integer totalPage;
         @SerializedName("current_page")
         private Integer currentPage;
+        @SerializedName("total_size")
+        private Integer totalSize;
         @SerializedName("settlement_records")
         private List<SettlementRecordsBean> settlementRecords;
 
-        @Builder
-        @Data
         @AllArgsConstructor
+        @Data
+        @Builder
         public static class SettlementRecordsBean{
             private String symbol;
             @SerializedName("contract_code")
             private String contractCode;
-            @SerializedName("margin_account")
-            private String marginAccount;
-            @SerializedName("margin_mode")
-            private String marginMode;
-            @SerializedName("margin_balance_init")
+            @SerializedName("contract_code")
             private BigDecimal marginBalanceInit;
             @SerializedName("margin_balance")
             private BigDecimal marginBalance;
@@ -56,13 +53,11 @@ public class SwapUserSettlementRecordsResponse {
             private BigDecimal fee;
             @SerializedName("fee_asset")
             private String feeAsset;
-            @SerializedName("trade_partition")
-            private String tradePartition;
             private List<PositionsBean> positions;
 
-            @Builder
-            @Data
             @AllArgsConstructor
+            @Data
+            @Builder
             public static class PositionsBean{
                 private String symbol;
                 @SerializedName("contract_code")

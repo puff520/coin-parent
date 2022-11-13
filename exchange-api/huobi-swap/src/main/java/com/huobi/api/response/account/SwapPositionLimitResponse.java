@@ -28,7 +28,6 @@ public class SwapPositionLimitResponse {
         /**
          * "symbol": "ETH",
          * "contract_code": "ETH-USDT",
-         * "margin_mode":"isolated",
          * "buy_limit": 1234567.000000000000000000,
          * "sell_limit": 7654321.000000000000000000
          */
@@ -40,9 +39,5 @@ public class SwapPositionLimitResponse {
         private BigDecimal buyLimit;
         @SerializedName("sell_limit")
         private BigDecimal sellLimit;
-        @SerializedName("margin_mode")
-        private String marginMode;
-        @SerializedName("trade_partition")
-        private String tradePartition;
     }
 }

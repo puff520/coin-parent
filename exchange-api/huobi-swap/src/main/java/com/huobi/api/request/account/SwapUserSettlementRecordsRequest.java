@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+@AllArgsConstructor
 @Builder
 @Data
-@AllArgsConstructor
 public class SwapUserSettlementRecordsRequest {
     private String contractCode;
     private Long startTime;

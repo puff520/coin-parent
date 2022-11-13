@@ -46,19 +46,9 @@ public class SwapOrderLimitResponse {
              */
 
             private String symbol;
-            @SerializedName("contract_code")
             private String contractCode;
-            @SerializedName("open_limit")
             private Float openLimit;
-            @SerializedName("close_limit")
             private Float closeLimit;
-            private String pair;
-            @SerializedName("business_type")
-            private String businessType;
-            @SerializedName("contract_type")
-            private String contractType;
-            @SerializedName("trade_partition")
-            private String tradePartition;
 
         }
     }

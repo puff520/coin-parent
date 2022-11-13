@@ -145,7 +145,7 @@
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.huobi.linear.swap.api</groupId>
+			<groupId>com.huobi.margined</groupId>
 			<artifactId>huobi-swap</artifactId>
 			<version>1.0.1</version>
 		</dependency>

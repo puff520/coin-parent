@@ -39,13 +39,6 @@ public class SwapInsuranceFundResponse {
         private Integer currentPage;
         @SerializedName("total_size")
         private Integer totalSize;
-        private String pair;
-        @SerializedName("business_type")
-        private String businessType;
-        @SerializedName("contract_type")
-        private String contractType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
         private List<DataTick> tick;
 
         @AllArgsConstructor

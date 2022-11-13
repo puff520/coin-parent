@@ -4,8 +4,6 @@ import com.huobi.api.request.trade.*;
 import com.huobi.api.response.trade.*;
 
 public interface TradeAPIService {
-    SwapSwitchPositionModeResponse swapSwitchPositionModeResponse(String marginAccount,String positionMode);
-
     SwapOrderResponse swapOrderRequest(SwapOrderRequest request);//合约下单
 
     SwapBatchorderResponse swapBatchorderRequest(SwapBatchorderRequest request);//合约批量下单
@@ -37,7 +35,11 @@ public interface TradeAPIService {
 
     SwapTriggerHisordersResponse swapTriggerHisordersResponse(SwapTriggerHisordersRequest request);//获取计划委托历史委托
 
-    SwapSwitchLeverRateResponse getSwapSwitchLeverRate(String contractCode, Integer lever_rate);//切换杠杆
+    SwapSwitchLeverRateResponse swapSwitchLeverRateResponse(String contractCdoe,Integer leverRate);//切换杠杆
+
+    SwapHisordersExactResponse swapHisordersExactResponse(SwapHisordersExectRequest request);//组合查询合约历史委托
+
+    SwapMatchresultsExactResponse swapMatchresultsExactResponse(SwapMatchresultsExactRequest request);//组合查询用户历史成交记录
 
     SwapTpslOrderResponse swapTpslOrderResponse(SwapTpslOrderRequest request);
 
@@ -50,10 +52,6 @@ public interface TradeAPIService {
     SwapTpslHisordersResponse swapTpslHisordersResponse(SwapTpslHisordersRequset request);
 
     SwapRelationTpslOrderResponse swapRelationTpslOrderResponse(SwapRelationTpslOrderRequest request);
-
-    SwapHisordersExactResponse swapHisordersExactResponse(SwapHisordersExactRequest request);
-
-    SwapMatchresultsExactResponse swapMatchresultsExactResponse(SwapMatchresultsExactRequest request);
 
     SwapTrackOrderResponse swapTrackOrderResponse(SwapTrackOrderRequest request);
 

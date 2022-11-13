@@ -20,14 +20,10 @@ public class MarketBboResponse {
     @AllArgsConstructor
     public static class TicksBean{
         @SerializedName("contract_code")
-        private String contractCode;
+        private String contract_code;
         private Long mrid;
         private List ask;
         private List bid;
         private Long ts;
-        @SerializedName("business_type")
-        public String businessType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
     }
 }

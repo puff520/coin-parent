@@ -8,5 +8,4 @@ import lombok.Data;
 public class SwapRelationTpslOrderRequest {
     private String contractCode;
     private Long orderId;
-    private String pair;
 }

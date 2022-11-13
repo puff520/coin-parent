@@ -22,9 +22,8 @@ public class SwapTriggerOrderRequest {
     private BigDecimal triggerPrice;//触发价，精度超过最小变动单位会报错
     private BigDecimal orderPrice;//委托价，精度超过最小变动单位会报错
     private String orderPriceType;//委托类型： 不填默认为limit;	限价：limit ，最优5档：optimal_5，最优10档：optimal_10，最优20档：optimal_20
-    private BigDecimal volume;//委托数量(张)
+    private Long volume;//委托数量(张)
     private DirectionEnum direction;//buy:买 sell:卖
     private OffsetEnum offset;//open:开 close:平
     private Integer leverRate;//开仓必须填写，平仓可以不填。杠杆倍数[开仓若有10倍多单，就不能再下20倍多单]
-    private Integer reduceOnly;
 }

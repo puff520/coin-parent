@@ -37,19 +37,11 @@ public class SwapOpenInterestResponse {
         private String contractCode;
         private BigDecimal amount;
         private BigDecimal volume;
-        private BigDecimal value;
         @SerializedName("trade_amount")
         private BigDecimal tradeAmount;
         @SerializedName("trade_volume")
         private BigDecimal tradeVolume;
         @SerializedName("trade_turnover")
         private BigDecimal tradeTurnover;
-        private String pair;
-        @SerializedName("business_type")
-        private String businessType;
-        @SerializedName("contract_type")
-        private String contractType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
     }
 }

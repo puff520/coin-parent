@@ -42,5 +42,4 @@ public class SwapOrderRequest {
     private BigDecimal slTriggerPrice;
     private BigDecimal slOrderPrice;
     private String slOrderPriceType;
-    private Integer reduceOnly;
 }

@@ -44,6 +44,5 @@ public class LinearSwapEstimatedRateKlineResponse {
         private String amount;
         @SerializedName("trade_turnover")
         private String tradeTurnover;
-
     }
 }

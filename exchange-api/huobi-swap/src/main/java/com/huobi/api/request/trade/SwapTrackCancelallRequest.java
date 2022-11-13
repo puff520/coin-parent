@@ -11,6 +11,4 @@ public class SwapTrackCancelallRequest {
     private String contractCode;
     private String direction;
     private String offset;
-    private String pair;
-    private String contractType;
 }

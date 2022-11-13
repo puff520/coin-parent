@@ -4,8 +4,10 @@ import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import sun.rmi.runtime.Log;
 
 import java.math.BigDecimal;
+import java.util.LinkedList;
 import java.util.List;
 
 @Data
@@ -21,7 +23,7 @@ public class SwapMasterSubTransferRecordResponse {
 
     private String status;
     private Long ts;
-    private List<DataBean> data;
+    private DataBean data;
 
     @Data
     @AllArgsConstructor
@@ -64,9 +66,9 @@ public class SwapMasterSubTransferRecordResponse {
 
             private Long id;
             private Long ts;
-            private String asset;
-            @SerializedName("margin_account")
-            private String marginAccount;
+            private String symbol;
+            @SerializedName("contract_code")
+            private String contractCode;
             @SerializedName("from_margin_account")
             private String fromMarginAccount;
             @SerializedName("to_margin_account")

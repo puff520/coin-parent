@@ -46,14 +46,6 @@ public class SwapFeeResponse {
         private String closeTakerFee;
         @SerializedName("fee_asset")
         private String feeAsset;
-        private String pair;
-        @SerializedName("business_type")
-        private String businessType;
-        @SerializedName("contract_type")
-        private String contractType;
-        @SerializedName("trade_partition")
-        private String tradePartition;
-        @SerializedName("delivery_fee")
-        private String deliveryFee;
+
     }
 }

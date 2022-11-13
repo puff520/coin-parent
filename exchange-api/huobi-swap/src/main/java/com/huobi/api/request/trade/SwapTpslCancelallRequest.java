@@ -8,6 +8,4 @@ import lombok.Data;
 public class SwapTpslCancelallRequest {
     private String contractCode;
     private String direction;
-    private String pair;
-    private String contractType;
 }

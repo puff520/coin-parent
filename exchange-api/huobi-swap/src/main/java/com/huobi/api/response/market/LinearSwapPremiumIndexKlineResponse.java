@@ -3,6 +3,7 @@ package com.huobi.api.response.market;
 import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import sun.rmi.runtime.Log;
 
 import javax.swing.text.Highlighter;
 import java.util.List;
@@ -43,7 +44,5 @@ public class LinearSwapPremiumIndexKlineResponse {
         private String low;
         private String High;
         private String amount;
-        @SerializedName("trade_turnover")
-        private String tradeTurnover;
     }
 }

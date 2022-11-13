@@ -37,9 +37,7 @@ public class SwapAccountInfoResponse {
          * "adjust_factor": 0.040000000000000000,
          * "margin_static": 987824.134612402937545594,
          * "contract_code": "BTC-USDT",
-         * "margin_asset": "USDT",
-         * "marginAccount":"BTC-USDT",
-         * "marginMode":"isolated"
+         * "margin_asset": "USDT"
          */
         private String symbol;
         @SerializedName("contract_code")
@@ -70,14 +68,7 @@ public class SwapAccountInfoResponse {
         private BigDecimal lever_rate;
         @SerializedName("adjust_factor")
         private BigDecimal adjustFactor;
-        @SerializedName("margin_mode")
-        private String marginMode;
-        @SerializedName("margin_account")
-        private String marginAccount;
-        @SerializedName("trade_partition")
-        private String tradePartition;
-        @SerializedName("position_mode")
-        private String positionMode;
+
 
     }
 }

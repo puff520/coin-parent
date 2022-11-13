@@ -9,7 +9,7 @@ import com.aqmd.netty.push.HawkPushServiceApi;
 
 import cn.ztuo.bitrade.constant.NettyCommand;
 import cn.ztuo.bitrade.entity.*;
-import cn.ztuo.bitrade.netty.QuoteMessage;
+import cn.ztuo.bitrade.protobuf.QuoteMessage;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.extern.slf4j.Slf4j;
