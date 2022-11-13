@@ -134,11 +134,22 @@
 			<artifactId>p6spy-spring-boot-starter</artifactId>
 			<version>1.8.1</version>
 		</dependency>
-
-
+		<dependency>
+			<groupId>com.huobi.sdk</groupId>
+			<artifactId>huobi-client</artifactId>
+			<version>2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.binance.sdk</groupId>
+			<artifactId>binance-client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huobi.linear.swap.api</groupId>
+			<artifactId>huobi-swap</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 	</dependencies>
-
-
 
 	<build>
 		<finalName>market</finalName>
