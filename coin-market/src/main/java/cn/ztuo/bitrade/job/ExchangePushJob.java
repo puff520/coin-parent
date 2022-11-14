@@ -1,9 +1,6 @@
 package cn.ztuo.bitrade.job;
 
-import cn.ztuo.bitrade.entity.CoinThumb;
-import cn.ztuo.bitrade.entity.ExchangeOrderDirection;
-import cn.ztuo.bitrade.entity.ExchangeTrade;
-import cn.ztuo.bitrade.entity.TradePlate;
+import cn.ztuo.bitrade.entity.*;
 import cn.ztuo.bitrade.handler.NettyHandler;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +19,8 @@ public class ExchangePushJob {
     private Map<String,List<ExchangeTrade>> tradesQueue = new HashMap<>();
     private Map<String,List<TradePlate>> plateQueue = new HashMap<>();
     private Map<String,List<CoinThumb>> thumbQueue = new HashMap<>();
+
+    private Map<String,List<MarketDetail>> marketQueue = new HashMap<>();
 
     public void addTrades(String symbol, List<ExchangeTrade> trades){
         List<ExchangeTrade> list = tradesQueue.get(symbol);
@@ -45,6 +44,18 @@ public class ExchangePushJob {
         }
     }
 
+    public void addMarketDetail(String symbol, MarketDetail marketDetail){
+        List<MarketDetail> list = marketQueue.get(symbol);
+        if(list == null){
+            list = new ArrayList<>();
+            marketQueue.put(symbol,list);
+        }
+        synchronized (list) {
+            list.add(marketDetail);
+        }
+    }
+
+
     public void addThumb(String symbol, CoinThumb thumb){
         List<CoinThumb> list = thumbQueue.get(symbol);
         if(list == null){
@@ -55,7 +66,6 @@ public class ExchangePushJob {
             list.add(thumb);
         }
     }
-
 
     @Scheduled(fixedRate = 500)
     public void pushTrade(){
@@ -112,6 +122,23 @@ public class ExchangePushJob {
 
     @Scheduled(fixedRate = 500)
     public void pushThumb(){
+        Iterator<Map.Entry<String,List<CoinThumb>>> entryIterator = thumbQueue.entrySet().iterator();
+        while (entryIterator.hasNext()){
+            Map.Entry<String,List<CoinThumb>> entry =  entryIterator.next();
+            String symbol = entry.getKey();
+            List<CoinThumb> thumbs = entry.getValue();
+            if(thumbs.size() > 0){
+                synchronized (thumbs) {
+                    messagingTemplate.convertAndSend("/topic/market/thumb",thumbs.get(thumbs.size() - 1));
+                    thumbs.clear();
+                }
+            }
+        }
+    }
+
+
+    @Scheduled(fixedRate = 500)
+    public void pushMarketDetail(){
         Iterator<Map.Entry<String,List<CoinThumb>>> entryIterator = thumbQueue.entrySet().iterator();
         while (entryIterator.hasNext()){
             Map.Entry<String,List<CoinThumb>> entry =  entryIterator.next();

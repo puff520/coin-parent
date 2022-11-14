@@ -44,7 +44,7 @@ public class ExchangeTradeConsumer {
 	@Value("${second.referrer.award}")
 	private boolean secondReferrerAward;
 	private ExecutorService executor = new ThreadPoolExecutor(30, 100, 0L, TimeUnit.MILLISECONDS,
-			new LinkedBlockingQueue<Runnable>(1024), new ThreadPoolExecutor.AbortPolicy());
+			new LinkedBlockingQueue<>(1024), new ThreadPoolExecutor.AbortPolicy());
 	@Autowired
 	private ExchangePushJob pushJob;
 
