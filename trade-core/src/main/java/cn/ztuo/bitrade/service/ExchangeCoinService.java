@@ -4,7 +4,6 @@ import com.querydsl.core.types.Predicate;
 
 import cn.ztuo.bitrade.dao.ExchangeCoinRepository;
 import cn.ztuo.bitrade.entity.ExchangeCoin;
-import cn.ztuo.bitrade.pagination.Criteria;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

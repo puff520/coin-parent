@@ -1,22 +1,15 @@
 package cn.ztuo.bitrade.controller;
 
 
-import cn.ztuo.bitrade.constant.SysConstant;
-import cn.ztuo.bitrade.entity.*;
+import cn.ztuo.bitrade.entity.CoinThumb;
+import cn.ztuo.bitrade.entity.ExchangeCoin;
 import cn.ztuo.bitrade.processor.CoinProcessor;
 import cn.ztuo.bitrade.processor.CoinProcessorFactory;
 import cn.ztuo.bitrade.service.ExchangeCoinService;
-import cn.ztuo.bitrade.service.ExchangeTradeService;
 import cn.ztuo.bitrade.service.MarketService;
-import cn.ztuo.bitrade.util.MessageResult;
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.binance.client.RequestOptions;
-import com.binance.client.SyncRequestClient;
-import com.binance.client.model.enums.CandlestickInterval;
 import com.huobi.api.request.account.SwapMarketHistoryKlineRequest;
-import com.huobi.api.response.market.*;
+import com.huobi.api.response.market.SwapMarketHistoryKlineResponse;
 import com.huobi.api.service.market.MarketAPIServiceImpl;
 import com.huobi.client.MarketClient;
 import com.huobi.client.req.market.*;
@@ -25,20 +18,13 @@ import com.huobi.constant.enums.DepthLevels;
 import com.huobi.constant.enums.DepthSizeEnum;
 import com.huobi.constant.enums.DepthStepEnum;
 import com.huobi.model.market.*;
-import com.huobi.model.market.MarketDetail;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RestController("/v2")
@@ -180,7 +166,6 @@ public class Market2Controller {
     }
 
 
-
     /**
      * 获得近期交易记录
      *
@@ -222,16 +207,6 @@ public class Market2Controller {
                 .builder().symbol(symbol).build(), event -> System.out.println(event.toString()));
     }
 
-
-    @RequestMapping("bnHistoryKline")
-    public List<com.binance.client.model.market.Candlestick> bnHistoryKline(String symbol, CandlestickInterval interval, Long startTime,
-                                                                            Long endTime, Integer limit) {
-        RequestOptions options = new RequestOptions();
-        SyncRequestClient syncRequestClient = SyncRequestClient.create("", "",
-                options);
-        List<com.binance.client.model.market.Candlestick> list = syncRequestClient.getCandlestick(symbol, interval, startTime, endTime, limit);
-        return list;
-    }
 
 
 }
