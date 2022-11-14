@@ -2,11 +2,11 @@ package cn.ztuo.bitrade.consumer;
 
 import cn.ztuo.bitrade.constant.WithdrawStatus;
 import cn.ztuo.bitrade.entity.WithdrawRecord;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import cn.ztuo.bitrade.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.entity.Coin;
 import cn.ztuo.bitrade.service.CoinService;
 import cn.ztuo.bitrade.service.MemberWalletService;

@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Service;
 
 import com.sparkframework.sql.model.Model;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.dao.CoinDao;
 import cn.ztuo.bitrade.dao.MemberAddressDao;

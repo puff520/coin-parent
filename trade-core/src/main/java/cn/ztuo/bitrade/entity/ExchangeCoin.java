@@ -1,12 +1,11 @@
 package cn.ztuo.bitrade.entity;
 
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-
-import cn.ztuo.bitrade.constant.BooleanEnum;
 
 import java.math.BigDecimal;
 
@@ -37,7 +36,7 @@ public class ExchangeCoin {
 
     @Enumerated(EnumType.ORDINAL)
     @Column(columnDefinition = "int(11) default 1 comment '是否启用市价卖'")
-    private BooleanEnum  enableMarketSell = BooleanEnum.IS_TRUE;
+    private BooleanEnum enableMarketSell = BooleanEnum.IS_TRUE;
 
     @Enumerated(EnumType.ORDINAL)
     @Column(columnDefinition = "int(11) default 1 comment '是否启用市价买'")

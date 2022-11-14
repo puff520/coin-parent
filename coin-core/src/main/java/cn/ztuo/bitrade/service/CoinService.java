@@ -1,10 +1,10 @@
 package cn.ztuo.bitrade.service;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.constant.PageModel;
 import cn.ztuo.bitrade.dao.CoinDao;
@@ -25,8 +25,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_FALSE;
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_TRUE;
+import static  cn.ztuo.bitrade.enums.BooleanEnum.IS_FALSE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_TRUE;
 
 import java.util.List;
 import java.util.stream.Collectors;

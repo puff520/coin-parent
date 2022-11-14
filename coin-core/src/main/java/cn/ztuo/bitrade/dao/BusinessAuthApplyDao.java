@@ -2,7 +2,6 @@ package cn.ztuo.bitrade.dao;
 
 import java.util.List;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CertifiedBusinessStatus;
 import cn.ztuo.bitrade.dao.base.BaseDao;
 import cn.ztuo.bitrade.entity.BusinessAuthApply;

@@ -1,6 +1,5 @@
 package cn.ztuo.bitrade.model.screen;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import lombok.Data;
 

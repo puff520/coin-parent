@@ -1,9 +1,6 @@
 package cn.ztuo.bitrade.entity;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
-import cn.ztuo.bitrade.entity.Alipay;
-import cn.ztuo.bitrade.entity.BankInfo;
-import cn.ztuo.bitrade.entity.WechatPay;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Builder;
 import lombok.Data;
 

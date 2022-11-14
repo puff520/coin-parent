@@ -1,5 +1,6 @@
 package cn.ztuo.bitrade.entity.transform;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Builder;
 import lombok.Data;
 
@@ -8,7 +9,6 @@ import java.math.BigDecimal;
 
 import cn.ztuo.bitrade.constant.AdvertiseControlStatus;
 import cn.ztuo.bitrade.constant.AdvertiseType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PriceType;
 import cn.ztuo.bitrade.entity.Advertise;
 import cn.ztuo.bitrade.entity.Country;

@@ -1,10 +1,8 @@
 package cn.ztuo.bitrade.entity;
-
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 
 import javax.persistence.*;
-
-import cn.ztuo.bitrade.constant.BooleanEnum;
 
 @Data
 @Entity

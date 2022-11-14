@@ -1,9 +1,9 @@
 package cn.ztuo.bitrade.model.screen;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.entity.ExchangeOrderDirection;
 import cn.ztuo.bitrade.entity.ExchangeOrderStatus;
 import cn.ztuo.bitrade.entity.ExchangeOrderType;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 
 import java.math.BigDecimal;

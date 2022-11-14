@@ -1,5 +1,6 @@
 package cn.ztuo.bitrade.controller.member;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import cn.ztuo.bitrade.annotation.AccessLog;

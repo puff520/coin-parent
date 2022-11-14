@@ -1,9 +1,9 @@
 package cn.ztuo.bitrade.dao;
 
 import cn.ztuo.bitrade.constant.ActivityRewardType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.dao.base.BaseDao;
 import cn.ztuo.bitrade.entity.RewardActivitySetting;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 
 /**
  * @author GS

@@ -1,11 +1,11 @@
 package cn.ztuo.bitrade.controller.exchange;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.alibaba.fastjson.JSON;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import cn.ztuo.bitrade.annotation.AccessLog;
 import cn.ztuo.bitrade.constant.AdminModule;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PageModel;
 import cn.ztuo.bitrade.entity.*;
 import cn.ztuo.bitrade.service.ExchangeOrderService;

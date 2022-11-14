@@ -1,8 +1,8 @@
 package cn.ztuo.bitrade.controller;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.alibaba.fastjson.JSONObject;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.constant.TransactionType;
 import cn.ztuo.bitrade.entity.*;

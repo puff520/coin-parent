@@ -1,8 +1,8 @@
 package cn.ztuo.bitrade.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 import lombok.ToString;
 import org.hibernate.validator.constraints.NotBlank;

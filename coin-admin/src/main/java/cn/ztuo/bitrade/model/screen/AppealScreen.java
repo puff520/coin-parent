@@ -2,6 +2,7 @@ package cn.ztuo.bitrade.model.screen;
 
 import cn.ztuo.bitrade.constant.*;
 import cn.ztuo.bitrade.entity.Advertise;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 
 @Data

@@ -1,8 +1,8 @@
 package cn.ztuo.bitrade.controller;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.alibaba.fastjson.JSONObject;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.constant.SysConstant;
 import cn.ztuo.bitrade.constant.WithdrawStatus;
@@ -239,7 +239,7 @@ public class WithdrawController {
         MemberWallet memberWallet = memberWalletService.findByCoinAndMemberId(coin, user.getId());
         isTrue(compare(memberWallet.getBalance(), amount), sourceService.getMessage("INSUFFICIENT_BALANCE"));
 //        isTrue(memberAddressService.findByMemberIdAndAddress(user.getId(), address).size() > 0, sourceService.getMessage("WRONG_ADDRESS"));
-        isTrue(memberWallet.getIsLock()==BooleanEnum.IS_FALSE,"钱包已锁定");
+        isTrue(memberWallet.getIsLock()== BooleanEnum.IS_FALSE,"钱包已锁定");
         Member member = memberService.findOne(user.getId());
         String mbPassword = member.getJyPassword();
         Assert.hasText(mbPassword, sourceService.getMessage("NO_SET_JYPASSWORD"));

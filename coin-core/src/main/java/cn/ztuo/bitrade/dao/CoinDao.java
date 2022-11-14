@@ -1,5 +1,6 @@
 package cn.ztuo.bitrade.dao;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
@@ -7,7 +8,6 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.dto.CoinDTO;
 import cn.ztuo.bitrade.entity.Coin;

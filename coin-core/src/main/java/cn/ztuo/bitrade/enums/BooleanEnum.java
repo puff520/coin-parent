@@ -1,8 +1,7 @@
-package cn.ztuo.bitrade.constant;
-
-import com.fasterxml.jackson.annotation.JsonValue;
+package cn.ztuo.bitrade.enums;
 
 import cn.ztuo.bitrade.core.BaseEnum;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

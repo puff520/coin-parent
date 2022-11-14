@@ -1,7 +1,7 @@
 package cn.ztuo.bitrade.service;
 
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_FALSE;
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_TRUE;
+import static  cn.ztuo.bitrade.enums.BooleanEnum.IS_FALSE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_TRUE;
 import static cn.ztuo.bitrade.entity.QAdvertise.advertise;
 import static cn.ztuo.bitrade.util.BigDecimalUtils.mulRound;
 import static cn.ztuo.bitrade.util.BigDecimalUtils.rate;
@@ -37,7 +37,6 @@ import com.sparkframework.sql.DataException;
 
 import cn.ztuo.bitrade.constant.AdvertiseControlStatus;
 import cn.ztuo.bitrade.constant.AdvertiseType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
 import cn.ztuo.bitrade.constant.Currency;
 import cn.ztuo.bitrade.constant.PriceType;
@@ -60,7 +59,7 @@ import cn.ztuo.bitrade.util.BigDecimalUtils;
 import cn.ztuo.bitrade.util.DateUtil;
 import cn.ztuo.bitrade.util.MessageResult;
 import lombok.extern.slf4j.Slf4j;
-
+import cn.ztuo.bitrade.enums.BooleanEnum;
 /**
  * @author GS
  * @date 2017年12月07日

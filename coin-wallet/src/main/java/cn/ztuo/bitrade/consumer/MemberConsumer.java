@@ -1,11 +1,11 @@
 package cn.ztuo.bitrade.consumer;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import cn.ztuo.bitrade.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 import cn.ztuo.bitrade.constant.ActivityRewardType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.RewardRecordType;
 import cn.ztuo.bitrade.constant.TransactionType;
 import cn.ztuo.bitrade.entity.*;
@@ -58,7 +58,7 @@ public class MemberConsumer {
         JSONObject json = JSON.parseObject(content);
         Coin coin = coinService.findByUnit(record.key());
         Assert.notNull(coin,"coin null");
-        if(coin.getEnableRpc()==BooleanEnum.IS_TRUE){
+        if(coin.getEnableRpc()== BooleanEnum.IS_TRUE){
             MemberWallet memberWallet = memberWalletService.findByCoinUnitAndMemberId(record.key(),json.getLong("uid"));
             Assert.notNull(memberWallet,"wallet null");
             String account = "U" + json.getLong("uid")+ GeneratorUtil.getNonceString(4);

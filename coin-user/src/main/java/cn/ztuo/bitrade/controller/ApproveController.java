@@ -28,8 +28,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_FALSE;
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_TRUE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_FALSE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_TRUE;
 import static cn.ztuo.bitrade.constant.CertifiedBusinessStatus.*;
 import static cn.ztuo.bitrade.constant.SysConstant.SESSION_MEMBER;
 import static org.springframework.util.Assert.*;

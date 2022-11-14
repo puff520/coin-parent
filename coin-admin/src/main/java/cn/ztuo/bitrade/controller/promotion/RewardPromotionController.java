@@ -2,6 +2,7 @@ package cn.ztuo.bitrade.controller.promotion;
 
 import javax.validation.Valid;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,7 +24,6 @@ import com.sparkframework.security.Encrypt;
 
 import cn.ztuo.bitrade.annotation.AccessLog;
 import cn.ztuo.bitrade.constant.AdminModule;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PageModel;
 import cn.ztuo.bitrade.constant.PromotionRewardType;
 import cn.ztuo.bitrade.constant.SysConstant;

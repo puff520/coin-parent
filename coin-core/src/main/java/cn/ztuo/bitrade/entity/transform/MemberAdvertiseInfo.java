@@ -1,8 +1,8 @@
 package cn.ztuo.bitrade.entity.transform;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import lombok.Builder;
 import lombok.Data;
 

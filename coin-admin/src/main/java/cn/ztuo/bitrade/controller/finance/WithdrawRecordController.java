@@ -1,6 +1,6 @@
 package cn.ztuo.bitrade.controller.finance;
 
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_FALSE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_FALSE;
 import static cn.ztuo.bitrade.constant.WithdrawStatus.FAIL;
 import static cn.ztuo.bitrade.constant.WithdrawStatus.SUCCESS;
 import static cn.ztuo.bitrade.constant.WithdrawStatus.WAITING;
@@ -10,6 +10,7 @@ import static org.springframework.util.Assert.notNull;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,6 @@ import com.sparkframework.security.Encrypt;
 
 import cn.ztuo.bitrade.annotation.AccessLog;
 import cn.ztuo.bitrade.constant.AdminModule;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PageModel;
 import cn.ztuo.bitrade.constant.SysConstant;
 import cn.ztuo.bitrade.constant.TransactionType;

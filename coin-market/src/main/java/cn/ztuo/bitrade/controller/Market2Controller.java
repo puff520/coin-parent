@@ -39,6 +39,7 @@ public class Market2Controller {
     MarketClient marketClient = MarketClient.create(new HuobiOptions());
     MarketAPIServiceImpl huobiAPIService = new MarketAPIServiceImpl();
 
+
     /**
      * 获取支持的交易币种
      *

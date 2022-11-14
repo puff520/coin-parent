@@ -1,25 +1,15 @@
 package cn.ztuo.bitrade.service;
 
-import com.querydsl.core.types.Predicate;
-
 import cn.ztuo.bitrade.constant.ActivityRewardType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.dao.RewardActivitySettingDao;
-import cn.ztuo.bitrade.dto.PageParam;
 import cn.ztuo.bitrade.entity.QRewardActivitySetting;
 import cn.ztuo.bitrade.entity.QRewardPromotionSetting;
 import cn.ztuo.bitrade.entity.RewardActivitySetting;
-import cn.ztuo.bitrade.entity.RewardPromotionSetting;
-import cn.ztuo.bitrade.service.Base.BaseService;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import cn.ztuo.bitrade.service.Base.TopBaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * @author GS

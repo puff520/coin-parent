@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CommonStatus;
-import cn.ztuo.bitrade.controller.BaseController;
 import cn.ztuo.bitrade.entity.Coin;
 import cn.ztuo.bitrade.entity.Member;
 import cn.ztuo.bitrade.entity.MemberWallet;

@@ -4,6 +4,7 @@ import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.annotation.ExcelEntity;
 import cn.ztuo.bitrade.constant.*;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;

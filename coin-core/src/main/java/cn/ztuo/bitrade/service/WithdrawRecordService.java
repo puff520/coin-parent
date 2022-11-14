@@ -1,10 +1,10 @@
 package cn.ztuo.bitrade.service;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.querydsl.core.types.*;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PageModel;
 import cn.ztuo.bitrade.constant.TransactionType;
 import cn.ztuo.bitrade.constant.WithdrawStatus;
@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static cn.ztuo.bitrade.constant.BooleanEnum.IS_FALSE;
+import static cn.ztuo.bitrade.enums.BooleanEnum.IS_FALSE;
 import static cn.ztuo.bitrade.constant.WithdrawStatus.*;
 import static cn.ztuo.bitrade.entity.QWithdrawRecord.withdrawRecord;
 import static org.springframework.util.Assert.isTrue;

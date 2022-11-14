@@ -1,13 +1,12 @@
 package cn.ztuo.bitrade.entity;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
-
-import cn.ztuo.bitrade.constant.BooleanEnum;
 
 /**
  * @author GS

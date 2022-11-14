@@ -1,9 +1,8 @@
 package cn.ztuo.bitrade.entity;
-
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import cn.ztuo.bitrade.constant.ActivityRewardType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import lombok.Data;
 import org.hibernate.annotations.UpdateTimestamp;
 

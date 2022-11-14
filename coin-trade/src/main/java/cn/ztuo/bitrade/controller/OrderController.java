@@ -1,10 +1,10 @@
 package cn.ztuo.bitrade.controller;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.MemberLevelEnum;
 import cn.ztuo.bitrade.constant.SysConstant;
 import cn.ztuo.bitrade.entity.*;
 import cn.ztuo.bitrade.entity.transform.AuthMember;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import cn.ztuo.bitrade.service.*;
 import cn.ztuo.bitrade.util.MessageResult;
 import com.alibaba.fastjson.JSON;

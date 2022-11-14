@@ -1,9 +1,9 @@
 package cn.ztuo.bitrade.ForkJoin;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.entity.Coin;
 import cn.ztuo.bitrade.entity.Member;
 import cn.ztuo.bitrade.entity.MemberWallet;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import cn.ztuo.bitrade.service.CoinService;
 import cn.ztuo.bitrade.service.MemberWalletService;
 import cn.ztuo.bitrade.util.MessageResult;

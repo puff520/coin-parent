@@ -2,16 +2,8 @@ package cn.ztuo.bitrade.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import cn.ztuo.bitrade.constant.AdvertiseType;
-import cn.ztuo.bitrade.constant.AppealStatus;
-import cn.ztuo.bitrade.constant.BooleanEnum;
-import cn.ztuo.bitrade.constant.OrderStatus;
-import cn.ztuo.bitrade.entity.Appeal;
 import lombok.Data;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;

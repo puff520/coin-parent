@@ -1,7 +1,7 @@
 package cn.ztuo.bitrade.model.screen;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.WithdrawStatus;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Data;
 
 @Data

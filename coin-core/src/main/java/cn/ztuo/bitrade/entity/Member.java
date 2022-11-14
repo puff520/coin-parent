@@ -3,6 +3,7 @@ package cn.ztuo.bitrade.entity;
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.ztuo.bitrade.constant.*;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

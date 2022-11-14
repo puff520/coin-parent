@@ -1,10 +1,9 @@
 package cn.ztuo.bitrade.entity;
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.WithdrawStatus;
-import cn.ztuo.bitrade.entity.WithdrawRecord;
 import lombok.Builder;
 import lombok.Data;
 

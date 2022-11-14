@@ -1,7 +1,7 @@
 package cn.ztuo.bitrade.entity;
 
 import cn.ztuo.bitrade.constant.AdvertiseType;
-import cn.ztuo.bitrade.constant.BooleanEnum;
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import lombok.Builder;
 import lombok.Data;
 

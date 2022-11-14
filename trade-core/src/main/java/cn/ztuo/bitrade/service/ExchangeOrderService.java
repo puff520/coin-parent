@@ -1,13 +1,13 @@
 package cn.ztuo.bitrade.service;
 
 
+import cn.ztuo.bitrade.enums.BooleanEnum;
 import com.alibaba.fastjson.JSONObject;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.sparkframework.sql.DB;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.PromotionRewardType;
 import cn.ztuo.bitrade.constant.RewardRecordType;
 import cn.ztuo.bitrade.constant.TransactionType;
@@ -18,12 +18,6 @@ import cn.ztuo.bitrade.entity.*;
 import cn.ztuo.bitrade.pagination.Criteria;
 import cn.ztuo.bitrade.pagination.PageResult;
 import cn.ztuo.bitrade.pagination.Restrictions;
-import cn.ztuo.bitrade.service.LocaleMessageSourceService;
-import cn.ztuo.bitrade.service.MemberService;
-import cn.ztuo.bitrade.service.MemberTransactionService;
-import cn.ztuo.bitrade.service.MemberWalletService;
-import cn.ztuo.bitrade.service.RewardPromotionSettingService;
-import cn.ztuo.bitrade.service.RewardRecordService;
 import cn.ztuo.bitrade.service.Base.BaseService;
 import cn.ztuo.bitrade.util.BigDecimalUtils;
 import cn.ztuo.bitrade.util.DateUtil;

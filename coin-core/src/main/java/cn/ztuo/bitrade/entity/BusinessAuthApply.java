@@ -3,16 +3,13 @@ package cn.ztuo.bitrade.entity;
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import cn.ztuo.bitrade.constant.BooleanEnum;
 import cn.ztuo.bitrade.constant.CertifiedBusinessStatus;
 import lombok.Data;
 import lombok.ToString;
-import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.Map;
 
 /**
  * 商家认证申请信息
